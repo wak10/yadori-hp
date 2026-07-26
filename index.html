@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: #FFFFFF; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  ::selection { background: #1D5F0C; color: #FFFFFF; }
+  a { color: #1D5F0C; }
+  a:hover { color: #15470A; }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" fill="#F3F6EF"></rect>
+    <path d="M20 60 L50 34 L80 60" fill="none" stroke="#1F2A1A" stroke-width="3"></path>
+    <text x="50" y="80" font-size="16" fill="#1D5F0C" text-anchor="middle" font-family="sans-serif">yadori</text>
+  </svg>
+</template>
+
+<div style="font-family: 'Noto Sans JP', sans-serif; color: #1F2A1A; background: #FFFFFF; overflow-x: hidden;">
+
+  <!-- ===== NAV ===== -->
+  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; padding: 16px 44px; background: rgba(255,255,255,0.85); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #EAF0E6;">
+    <a href="#top" style="text-decoration: none; color: #1F2A1A; display: flex; align-items: center; gap: 12px;">
+      <img src="uploads/Group.png" alt="yadori" style="height: 48px; width: auto; display: block;">
+    </a>
+    <div style="display: flex; align-items: center; gap: 36px; margin-left: auto;">
+      <a href="about.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500;" style-hover="color: #1D5F0C;">私たちについて</a>
+      <a href="services.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500;" style-hover="color: #1D5F0C;">事業内容</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScDaAVj559YMA7w5Mh1OjoHzzynQUfBV-Idlr74y2hrEewQeA/viewform?usp=header" target="_blank" style="text-decoration: none; color: #1D5F0C; background: #FFFFFF; border: 1.5px solid #1D5F0C; font-size: 14px; font-weight: 700; padding: 12px 26px; border-radius: 100px; transition: background 0.2s, color 0.2s;" style-hover="background: #1D5F0C; color: #FFFFFF;">お問い合わせ</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="top" data-screen-label="Hero" style="padding: 168px 44px 0; max-width: 1480px; margin: 0 auto;">
+    <h1 style="font-weight: 900; line-height: 1.18; letter-spacing: 0.01em; margin-bottom: 40px; animation: riseIn 0.7s ease both;">
+      <span style="display: block; font-size: clamp(40px, 8vw, 108px); color: #1F2A1A;">宿をつなぎ、</span>
+      <span style="display: block; font-size: clamp(40px, 8vw, 108px); color: #1D5F0C;">事業をひらく。</span>
+    </h1>
+    <p style="font-size: clamp(16px, 1.6vw, 22px); font-weight: 500; line-height: 1.9; color: #4C5A4A; margin-bottom: 56px; animation: riseIn 0.85s ease 0.1s both;">
+      旅館業の許可取得・運営代行から、業務を支えるWeb開発まで。<br>
+      <span style="color: #1F2A1A; font-weight: 700;">合同会社やどり</span> が、二つの専門性であなたの事業に寄り添います。
+    </p>
+    <div style="height: clamp(320px, 46vw, 600px); border-radius: 24px; position: relative; overflow: hidden; animation: riseIn 1s ease 0.18s both;">
+      <img src="mv.jpg" alt="やどり メインビジュアル" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+    </div>
+  </header>
+
+  <!-- ===== STATEMENT ===== -->
+  <section data-screen-label="Statement" style="padding: 130px 44px 120px; max-width: 1000px; margin: 0 auto; text-align: center;">
+    <div style="display: inline-flex; gap: 5px; margin-bottom: 40px;">
+    </div>
+    <h2 style="font-weight: 900; font-size: clamp(30px, 4.6vw, 62px); line-height: 1.45; letter-spacing: 0.01em;">
+      <span style="color: #1F2A1A;">そこに宿るものを、</span><br>
+      <span style="color: #1D5F0C;">次へつなぐ。</span>
+    </h2>
+    <div style="width: 56px; height: 2px; background: #CFDCC4; margin: 44px auto;"></div>
+    <p style="font-size: clamp(15px, 1.4vw, 19px); font-weight: 500; line-height: 2.1; color: #4C5A4A;">
+      旅館業の運営も、Webシステムの開発も。<br>
+      私たちは「人と場、事業と未来をつなぐ」ことを大切に、<br>
+      現場の知見と確かな技術で、事業に長く伴走します。
+    </p>
+    <a href="about.html" style="display: inline-flex; align-items: center; gap: 22px; margin-top: 52px; text-decoration: none; color: #1D5F0C; background: #FFFFFF; border: 1.5px solid #1D5F0C; font-size: 15px; font-weight: 700; padding: 18px 40px; border-radius: 100px; transition: background 0.2s, color 0.2s;" style-hover="background: #1D5F0C; color: #FFFFFF;">
+      会社案内はこちら
+      <span style="opacity: 0.5; font-weight: 400;">|</span>
+      <span>→</span>
+    </a>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" data-screen-label="Services" style="background: #F3F6EF; padding: 110px 44px;">
+    <div style="max-width: 1480px; margin: 0 auto;">
+      <div style="margin-bottom: 56px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; color: #1D5F0C; margin-left: 4px;">SERVICE</span>
+        </div>
+        <h2 style="font-size: clamp(30px, 4vw, 52px); font-weight: 900; letter-spacing: 0.01em;">事業内容</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 18px; padding: 46px 44px; min-height: 340px; display: flex; flex-direction: column; justify-content: space-between; transition: box-shadow 0.25s, transform 0.25s;" style-hover="box-shadow: 0 16px 40px rgba(31,42,26,0.08); transform: translateY(-4px);">
+            <div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px;">
+                <span style="font-size: 34px; font-weight: 900; color: #1D5F0C; letter-spacing: 0.02em;">01</span>
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #A6B3AA;">LODGING</span>
+              </div>
+              <h3 style="font-size: 27px; font-weight: 700; margin-bottom: 18px;">宿泊事業（旅館業運営）</h3>
+              <p style="font-size: 15px; line-height: 2; color: #4C5A4A; max-width: 480px;">旅館業許可の取得代行から日々の運営管理まで、宿泊事業を一気通貫でご支援します。</p>
+            </div>
+            <div style="margin-top: 32px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px;">
+                
+                  <span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">旅館業許可申請</span><span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">運営管理代行</span><span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">予約最適化</span><span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">運営自動化</span>
+                
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 18px; padding: 46px 44px; min-height: 340px; display: flex; flex-direction: column; justify-content: space-between; transition: box-shadow 0.25s, transform 0.25s;" style-hover="box-shadow: 0 16px 40px rgba(31,42,26,0.08); transform: translateY(-4px);">
+            <div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px;">
+                <span style="font-size: 34px; font-weight: 900; color: #1D5F0C; letter-spacing: 0.02em;">02</span>
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #A6B3AA;">WEB DEV</span>
+              </div>
+              <h3 style="font-size: 27px; font-weight: 700; margin-bottom: 18px;">Web開発事業</h3>
+              <p style="font-size: 15px; line-height: 2; color: #4C5A4A; max-width: 480px;">業務システムやWebアプリケーションの企画・設計・開発を行います。開発から運用・保守まで一貫してサポートします。</p>
+            </div>
+            <div style="margin-top: 32px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px;">
+                
+                  <span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">受託開発</span><span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">要件定義</span><span style="font-size: 12px; font-weight: 500; color: #1D5F0C; background: #E9F1E4; border-radius: 100px; padding: 6px 14px;">運用・保守</span>
+                
+              </div>
+              <a href="services.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: #1D5F0C; text-decoration: none;" style-hover="gap: 16px;">詳しく見る <span>→</span></a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section data-screen-label="Features" style="padding: 110px 44px; max-width: 1480px; margin: 0 auto;">
+    <div style="margin-bottom: 56px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; color: #1D5F0C; margin-left: 4px;">FEATURES</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 3.6vw, 48px); font-weight: 900; letter-spacing: 0.01em;">やどりが選ばれる理由</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      
+        <div style="border: 1px solid #E5EADF; border-radius: 18px; padding: 44px 38px;">
+          <div style="font-size: 28px; font-weight: 900; color: #1D5F0C; margin-bottom: 18px;">01</div>
+          <h3 style="font-size: 21px; font-weight: 700; margin-bottom: 14px;">許可取得から運営まで一気通貫</h3>
+          <p style="font-size: 15px; line-height: 1.95; color: #4C5A4A;">旅館業の許可申請から日々の運営代行まで。窓口をひとつにまとめ、事業者様の負担を最小限にします。</p>
+        </div>
+      
+        <div style="border: 1px solid #E5EADF; border-radius: 18px; padding: 44px 38px;">
+          <div style="font-size: 28px; font-weight: 900; color: #1D5F0C; margin-bottom: 18px;">02</div>
+          <h3 style="font-size: 21px; font-weight: 700; margin-bottom: 14px;">現場の知見 × 開発力</h3>
+          <p style="font-size: 15px; line-height: 1.95; color: #4C5A4A;">旅館業運営の現場感覚と、Web開発の技術力。両輪を持つからこそ、自動化・効率化まで踏み込めます。</p>
+        </div>
+      
+        <div style="border: 1px solid #E5EADF; border-radius: 18px; padding: 44px 38px;">
+          <div style="font-size: 28px; font-weight: 900; color: #1D5F0C; margin-bottom: 18px;">03</div>
+          <h3 style="font-size: 21px; font-weight: 700; margin-bottom: 14px;">立ち上げて終わりにしない</h3>
+          <p style="font-size: 15px; line-height: 1.95; color: #4C5A4A;">運営の改善もシステムの保守も、公開後こそ本番。長く寄り添う伴走型のパートナーです。</p>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / STATS ===== -->
+  <section id="about" data-screen-label="About" style="background: #F3F6EF; padding: 110px 44px;">
+    <div style="max-width: 1480px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; color: #1D5F0C; margin-left: 4px;">ABOUT</span>
+        </div>
+        <h2 style="font-size: clamp(30px, 4vw, 52px); font-weight: 900; letter-spacing: 0.01em; line-height: 1.35; margin-bottom: 30px;">そこに「やどり」を。</h2>
+        <p style="font-size: 17px; line-height: 2; color: #34423A; margin-bottom: 22px; font-weight: 500;">
+          合同会社やどりは、宿泊事業（旅館業運営）とWeb開発事業を営む会社です。人と場所、事業と未来をつなぐことを大切にしています。
+        </p>
+        <p style="font-size: 15px; line-height: 2; color: #4C5A4A; margin-bottom: 40px;">旅館業の許可取得・運営代行から、業務を支えるWebシステムの開発まで。二つの専門性を掛け合わせ、確かなかたちでお客様に伴走します。</p>
+        <a href="about.html" style="display: inline-flex; align-items: center; gap: 18px; text-decoration: none; color: #1D5F0C; background: #FFFFFF; border: 1.5px solid #1D5F0C; font-size: 15px; font-weight: 700; padding: 16px 34px; border-radius: 100px; transition: background 0.2s, color 0.2s;" style-hover="background: #1D5F0C; color: #FFFFFF;">
+          会社概要を見る <span style="opacity: 0.5; font-weight: 400;">|</span> <span>→</span>
+        </a>
+      </div>
+
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 16px; padding: 36px 30px;">
+            <div style="font-size: 48px; font-weight: 900; line-height: 1.05; color: #1F2A1A; letter-spacing: 0.01em;">2<span style="font-size: 22px; color: #1D5F0C;"></span></div>
+            <div style="font-size: 14px; font-weight: 700; color: #34423A; margin-top: 16px; line-height: 1.6;">宿泊・Webの二つの事業の柱</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A6B3AA; margin-top: 5px;">BUSINESS</div>
+          </div>
+        
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 16px; padding: 36px 30px;">
+            <div style="font-size: 48px; font-weight: 900; line-height: 1.05; color: #1F2A1A; letter-spacing: 0.01em;">100<span style="font-size: 22px; color: #1D5F0C;">%</span></div>
+            <div style="font-size: 14px; font-weight: 700; color: #34423A; margin-top: 16px; line-height: 1.6;">旅館業許可の取得をサポート</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A6B3AA; margin-top: 5px;">LICENSE</div>
+          </div>
+        
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 16px; padding: 36px 30px;">
+            <div style="font-size: 48px; font-weight: 900; line-height: 1.05; color: #1F2A1A; letter-spacing: 0.01em;">24<span style="font-size: 22px; color: #1D5F0C;">h</span></div>
+            <div style="font-size: 14px; font-weight: 700; color: #34423A; margin-top: 16px; line-height: 1.6;">宿泊ゲストの対応体制</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A6B3AA; margin-top: 5px;">SUPPORT</div>
+          </div>
+        
+          <div style="background: #FFFFFF; border: 1px solid #E5EADF; border-radius: 16px; padding: 36px 30px;">
+            <div style="font-size: 48px; font-weight: 900; line-height: 1.05; color: #1F2A1A; letter-spacing: 0.01em;">0→1<span style="font-size: 22px; color: #1D5F0C;"></span></div>
+            <div style="font-size: 14px; font-weight: 700; color: #34423A; margin-top: 16px; line-height: 1.6;">許可取得から運営まで伴走</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A6B3AA; margin-top: 5px;">ONE-STOP</div>
+          </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="contact" data-screen-label="Contact" style="background: #1D5F0C; color: #FFFFFF; padding: 120px 44px;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; gap: 5px; margin-bottom: 32px;">
+      </div>
+      <h2 style="font-weight: 900; font-size: clamp(32px, 5.4vw, 72px); line-height: 1.3; letter-spacing: 0.01em; margin-bottom: 26px;">
+        まずは、<br>お気軽にご相談ください。
+      </h2>
+      <p style="font-size: 16px; line-height: 1.95; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 48px; font-weight: 500;">
+        宿泊事業の許可取得・運営管理、Web開発のご相談。構想段階のお問い合わせも歓迎です。まずはお気軽にご連絡ください。
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" style="background: #FFFFFF; color: #1F2A1A; text-decoration: none; font-size: 15px; font-weight: 700; padding: 18px 40px; border-radius: 100px; display: inline-flex; align-items: center; gap: 14px; transition: transform 0.2s;" style-hover="transform: translateY(-3px);">
+          お問い合わせフォーム <span style="opacity: 0.4; font-weight: 400;">|</span> <span>→</span>
+        </a>
+        <a href="services.html" style="background: transparent; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700; padding: 18px 40px; border-radius: 100px; border: 1.5px solid rgba(255,255,255,0.6); display: inline-flex; align-items: center; gap: 10px; transition: background 0.2s;" style-hover="background: rgba(255,255,255,0.12);">
+          事業内容を見る
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background: #1F2A1A; color: #A9B3A2; padding: 70px 44px 42px;">
+    <div style="max-width: 1480px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 50px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.12);">
+        <div style="max-width: 340px;">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+            <img src="uploads/Group.png" alt="yadori" style="height: 56px; width: auto; display: block; filter: brightness(0) invert(1);">
+          </div>
+          <p style="font-size: 13px; line-height: 1.9;">合同会社やどり<br>代表社員　千葉　崇弘</p>
+        </div>
+        <div style="display: flex; gap: 64px; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #6E7C68; margin-bottom: 18px;">MENU</div>
+            <div style="display: flex; flex-direction: column; gap: 13px;">
+              <a href="about.html" style="color: #C9D4C2; text-decoration: none; font-size: 14px;" style-hover="color: #7FB56A;">私たちについて</a>
+              <a href="services.html" style="color: #C9D4C2; text-decoration: none; font-size: 14px;" style-hover="color: #7FB56A;">事業内容</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #6E7C68; margin-bottom: 18px;">COMPANY</div>
+            <div style="display: flex; flex-direction: column; gap: 13px;">
+              <a href="contact.html" style="color: #C9D4C2; text-decoration: none; font-size: 14px;" style-hover="color: #7FB56A;">お問い合わせ</a>
+              <a href="#" style="color: #C9D4C2; text-decoration: none; font-size: 14px;" style-hover="color: #7FB56A;">プライバシーポリシー</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 26px; font-size: 12px; letter-spacing: 0.04em;">
+        <span>© 2026 yadori LLC. All rights reserved.</span>
+        <span>Made in Japan</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</helmet>
+<nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 20px 44px; background: rgba(255,255,255,0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #EAF0E6; font-family: 'Noto Sans JP', sans-serif;">
+  <a href="index.html" style="text-decoration: none; color: #1F2A1A; display: flex; align-items: center; gap: 12px;">
+    <img src="yadori-logo.png" alt="yadori" style="height: 48px; width: auto; display: block;" />
+  </a>
+  <div style="display: flex; align-items: center; gap: 40px;">
+    <a href="about.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500;" style-hover="color: #1D5F0C;">私たちについて</a>
+    <a href="services.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px;" style-hover="color: #1D5F0C;">事業内容 <span style="font-size: 11px; color: #1D5F0C;">▾</span></a>
+    <a href="works.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500;" style-hover="color: #1D5F0C;">実績一覧</a>
+    <a href="news.html" style="text-decoration: none; color: #1F2A1A; font-size: 15px; font-weight: 500;" style-hover="color: #1D5F0C;">お知らせ</a>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px;">
+    <a href="contact.html" style="text-decoration: none; color: #1D5F0C; background: #FFFFFF; border: 1.5px solid #1D5F0C; font-size: 14px; font-weight: 700; padding: 12px 26px; border-radius: 100px; transition: background 0.2s, color 0.2s;" style-hover="background: #1D5F0C; color: #FFFFFF;">お問い合わせ</a>
+    <a href="recruit.html" style="text-decoration: none; color: #FFFFFF; background: #1D5F0C; font-size: 14px; font-weight: 700; padding: 13px 24px; border-radius: 100px; display: inline-flex; align-items: center; gap: 14px; transition: background 0.2s;" style-hover="background: #16490A;">
+      採用情報
+      <span style="opacity: 0.45; font-weight: 400;">|</span>
+      <span style="font-size: 13px;">↗</span>
+    </a>
+  </div>
+</nav>
+</x-dc>
+</body>
+</html>
